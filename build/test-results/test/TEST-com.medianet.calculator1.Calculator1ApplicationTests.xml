@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.medianet.calculator1.Calculator1ApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-22T20:59:29" hostname="vagrant" time="0.631">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.medianet.calculator1.Calculator1ApplicationTests" time="0.631"/>
+  <system-out><![CDATA[20:59:28.324 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.medianet.calculator1.Calculator1ApplicationTests]: Calculator1ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:59:28.445 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.medianet.calculator1.Calculator1Application for test class com.medianet.calculator1.Calculator1ApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2024-02-22T20:59:28.781Z  INFO 274794 --- [    Test worker] c.m.c.Calculator1ApplicationTests        : Starting Calculator1ApplicationTests using Java 17.0.9 with PID 274794 (started by vagrant in /home/vagrant/projetwebservice/calculator1)
+2024-02-22T20:59:28.787Z  INFO 274794 --- [    Test worker] c.m.c.Calculator1ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2024-02-22T20:59:29.609Z  INFO 274794 --- [    Test worker] c.m.c.Calculator1ApplicationTests        : Started Calculator1ApplicationTests in 1.058 seconds (process running for 2.367)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
