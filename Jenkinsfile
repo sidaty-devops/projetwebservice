@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         registry = "sidaty/repo"
-        registryCredential = 'jenkinsdockerhub'
+        registryCredential = 'jenkisgitlabssh'
         dockerImage = ''
     }
         stages {
@@ -10,7 +10,7 @@ pipeline {
                 steps {
                     git branch: 'main',
                     credentialsId: 'jenkinsgithub',
-                    url :'git@github.com:sidaty-devops/projetwebservice.git'
+                    url :'git@gitlab.example.com:alain/microservice2.git'
                 }
             }
             stage("Compile") {
@@ -28,19 +28,19 @@ pipeline {
                 sh "./gradlew build"
                 }
             }
-            stage("Docker build") {
-                steps {
-                    script {
-                        sh "docker build -t 172.17.0.2:5000/imagespring ."
-                    }
-                }
-            }
-            stage("Docker push") {
-                steps {
-                    script {
-                        sh "docker push 172.17.0.2:5000/imagespring"
-                    }
-                }
-            }
+            //stage("Docker build") {
+              //  steps {
+                //    script {
+                  //      sh "docker build -t 172.17.0.2:5000/imagespring ."
+                    //}
+                //}
+            //}
+            //stage("Docker push") {
+              //  steps {
+                //    script {
+                  //      sh "docker push 172.17.0.2:5000/imagespring"
+                    //}
+                //}
+            //}
         }
 }
